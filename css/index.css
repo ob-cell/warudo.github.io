@@ -1,0 +1,204 @@
+/*
+__ __ __   ______    _______   ______   ______    ________   ______   _________
+/_//_//_/\ /_____/\ /_______/\ /_____/\ /_____/\  /_______/\ /_____/\ /________/\
+\:\\:\\:\ \\::::_\/_\::: _  \ \\:::__\/ \:::_ \ \ \::: _  \ \\::::_\/_\__.::.__\/
+\:\\:\\:\ \\:\/___/\\::(_)  \/_\:\ \  __\:(_) ) )_\::(_)  \ \\:\/___/\  \::\ \
+ \:\\:\\:\ \\::___\/_\::  _  \ \\:\ \/_/\\: __ `\ \\:: __  \ \\:::._\/   \::\ \
+  \:\\:\\:\ \\:\____/\\::(_)  \ \\:\_\ \ \\ \ `\ \ \\:.\ \  \ \\:\ \      \::\ \
+   \_______\/ \_____\/ \_______\/ \_____\/ \_\/ \_\/ \__\/\__\/ \_\/       \__\/
+
+(C) Nachwahl 2018
+Page Info:
+_______________
+id: #1
+description: Startpage
+*/
+
+
+
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/**/
+
+body {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.top {
+  /*Background Image*/
+  	background-image: url("../img/background.png");
+  	height: 100%;
+  	width: auto;
+  	text-align: center;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+
+  }
+
+
+h1 {
+  display: inline-block;
+  color: white;
+  font-family: 'Anton', serif;
+  font-size:10vw;
+  text-shadow: .03em .03em 0 #049b36;
+  margin-top: 80px;
+  animation-name: header;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes header {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.topbtn {
+font-size: 2.5em;
+margin-top: 1vh;
+font-family: 'Kavivanar', cursive;
+border: 3px solid #02d849;
+background-color: transparent;
+border-radius: 60px;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+padding: 10px 26px;
+font-family: 'Oswald', sans-serif;
+cursor: pointer;
+-webkit-appearance: button;
+-moz-appearance: button;
+appearance: button;
+text-decoration: none;
+animation-name: header;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+.topbtn:hover {
+background-color: #02d849;
+color: white;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+font-family: 'Oswald', bold;
+padding: 10px 40px;
+border-radius: 30px;
+}
+
+.content {
+background-color: #F7F7F7;
+margin-top: none;
+padding: 100px 100px;
+font-family: 'Raleway', sans-serif;
+font-size: 1.5em;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: 0 30px 30px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.contenttitle {
+background-color: #F7F7F7;
+margin-top: none;
+font-family: 'Raleway', bold;
+font-size: 2em;
+margin-top: 0px;
+text-align: center;
+}
+
+.gamemodes {
+text-align: center;
+background-color: #e6e6e6d1;
+margin-top: none;
+padding: 100px 100px;
+font-family: 'Raleway', sans-serif;
+font-size: 1.5em;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: 0 30px 30px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.gamemodeimg {
+	border-radius: 10px;
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	width: 35%;
+	margin-right: 0px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.gamemodeimg:hover {
+	border-radius: 10px;
+	box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	width: 35%;
+	margin-right: 0px;
+	transform: scale(1.01);
+}
+
+.gamemodedes {
+	float: right;
+}
+
+.gamemodetxt {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+.gamemode {
+	position: relative;
+	width: 100%;
+}
+
+.gamemodetxt span {
+   color: white;
+   font: bold 50px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+	 box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+hr {
+ background: #02d849;
+ border: none;
+ color: #02d849;
+ height: 5px;
+ border-radius: 10px;
+ margin-top: 0px;
+ animation-name: hr;
+ animation-duration: 0.3s;
+ animation-timing-function: ease-in;
+ width:60px;
+}
+
+@keyframes hr {
+	0% {
+		width:0px;
+}
+100% {
+	width:60px;
+}
+}
+
+h2 {
+	text-decoration: underline;
+}
